@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch | Visual Portfolio</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0c;
+            --card-bg: #141418;
+            --accent: #e91e63;
+            --text-main: #ffffff;
+            --text-muted: #9ca3af;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; border-bottom: 1px solid #222; }
+        .logo { font-weight: 800; font-size: 1.25rem; color: var(--text-main); text-decoration: none; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; margin-left: 1.5rem; }
+        .contact-box { max-width: 550px; margin: 4rem auto; padding: 2rem; background: var(--card-bg); border-radius: 16px; border: 1px solid #222; }
+        h1 { text-align: center; margin-bottom: 0.5rem; }
+        p { text-align: center; color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem; }
+        input, textarea {
+            width: 100%; padding: 0.9rem; margin-bottom: 1rem; background: #0a0a0c;
+            border: 1px solid #2a2a30; border-radius: 8px; color: white; font-size: 0.95rem;
+        }
+        button {
+            width: 100%; padding: 1rem; background: var(--accent); color: white; border: none;
+            border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">STUDIO.</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="contact-box">
+        <h1>Let's Work Together</h1>
+        <p>Have a shoot, collaboration, or project in mind? Send a message below.</p>
+        
+        <!-- Formsubmit sends messages directly to your Gmail without needing a backend -->
+        <form action="https://formsubmit.co/owinohjohn4075@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
